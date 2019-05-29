@@ -4,14 +4,21 @@
 
 body
   margin: 0
-  background-color: $palatte-background
   font-family: 'Muli', sans-serif
+  background-color: #f0f0f0
 
 li
   list-style: none
 
-.wrapper
-  max-width: $max-width
+a
+  text-decoration: none
+  color: black
+
+  &:hover
+    color: #d9232e 
+  
+.container
+  max-width: $widescreen
   margin: auto
 
   @media screen and (max-width: $tablet)

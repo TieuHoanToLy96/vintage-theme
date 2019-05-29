@@ -1,225 +1,314 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Vintage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/dist/main.css">
-  <link rel="stylesheet" href="/dist/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
-</head>
-<body>
-  <!-- Start Navbar -->
-  <header>
-    <div class="header">
-      <div class="ship-detail">
-        Free ship on orders over 50$
-      </div>
-      <div class="action-wrapper">
-        <div class="account-action">
-          <span>Log in</span>
-          <span>or</span>
-          <span>Create account</span>
-        </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,700,700i&amp;subset=vietnamese"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese"
+    rel="stylesheet">
 
-        <div><i class="fa fa-cart-plus" aria-hidden="true"></i> Cart</div>
-        <div class="search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="search" placeholder="Search..." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+
+</head>
+
+<body>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+
+  <!-- Start Navbar -->
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="container">
+        <div class="header-main is-flex is-center-vertical pt-15">
+          <div class="col-flex-1 header-main--logo mr-30">
+            <a href="/">
+              <img src="https://didong.muatheme.com/wp-content/uploads/2019/01/logo.png" />
+            </a>
+          </div>
+
+          <div class="col-flex-2 header-main--center">
+            <div class="is-flex mb-10 header-main--top">
+              <div class="col-flex-1 col-flex-1 is-flex text-bold">
+                <i class="fas fa-phone"></i>
+                <a href="" class="text-red ml-10"> 1900.2006 </a>
+              </div>
+
+              <div class="col-flex-1">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="" class="text-hover-red ml-10"> Hệ thống cửa hàng </a>
+              </div>
+
+              <div class="col-flex-1">
+                <a href="" class="text-hover-red ml-10"> Tuyển dụng tháng 01 </a>
+              </div>
+            </div>
+
+            <div class="header-main--search">
+              <div class="header-main--search__wrapper">
+                <div class="is-relative">
+                  <input placeholder="Bạn muốn tìm gì..." />
+                  <button class="is-absolute"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-flex-2 header-main--right is-flex is-fullheight is-flex--end">
+            <div class="header-main--right__wrapper is-fullheight">
+              <div class="is-flex col-flex-1 header-block is-fullheight is-center-vertical">
+                <div class="header-block--item col-box ml-10 mr-10">
+                  <div class="is-flex is-flex--space-between is-center-vertical">
+                    <div class="header-block--item__icon">
+                      <img src="https://didong.muatheme.com/wp-content/uploads/2019/01/icon-free.png" />
+                    </div>
+
+                    <h5 class="no-margin"> Dùng thử miễn phí</h5>
+                  </div>
+
+                  <div class="text-red">
+                    <p class="no-margin">15 ngày</p>
+                  </div>
+                </div>
+                <div class="header-block--item col-box ml-10 mr-10">
+                  <div class="is-flex is-flex--space-between is-center-vertical">
+                    <div class="header-block--item__icon">
+                      <img src="https://didong.muatheme.com/wp-content/uploads/2019/01/icon-1-1.png" />
+                    </div>
+
+                    <h5 class="no-margin"> 1 đổi 1 máy lỗi</h5>
+                  </div>
+
+                  <div class="text-red">
+                    <p class="no-margin">6 tháng</p>
+                  </div>
+                </div>
+                <div class="header-block--item col-box ml-10">
+                  <div class="is-flex is-flex--space-between is-center-vertical">
+                    <div class="header-block--item__icon">
+                      <img src="https://didong.muatheme.com/wp-content/uploads/2019/01/icon-bh.png" />
+                    </div>
+
+                    <h5 class="no-margin"> Bảo hành rơi võ</h5>
+                  </div>
+
+                  <div class="text-red">
+                    <p class="no-margin">12 tháng</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container is-flex is-flex--space-between is-fullheight">
+          <div class="">
+            <ul class="header-nav is-flex no-margin no-padding is-fullheight">
+              <li class="is-flex is-center-vertical">
+                <a href="">Điện thoại</a>
+              </li>
+              <li class="is-flex is-center-vertical">
+                <a href="">apple iphone</a>
+              </li>
+              <li class="is-flex is-center-vertical">
+                <a href="">phụ kiện</a>
+              </li>
+              <li class="is-flex is-center-vertical">
+                <a href="">máy tính bảng</a>
+              </li>
+              <li class="is-flex is-center-vertical">
+                <a href="">macbook</a>
+              </li>
+              <li class="is-flex is-center-vertical">
+                <a href="">Sửa chữa</a>
+              </li>
+              <li class="is-flex is-center-vertical">
+                <a href="">tin công nghệ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-action is-flex is-center-vertical">
+            <button class="header-action--button header-action--account mr-10">
+              <i class="fas fa-user"></i>
+            </button>
+
+            <div class="header-action--button  header-action--cart is-relative ml-10">
+              <button class="header-action--button header-action--cart">
+                1
+              </button>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
   </header>
   <!-- End navbar -->
-
-  <div class="wrapper">
-    <!-- Start navbar -->
-    <nav>
-      <div class="nav-wrapper">
-        <div class="logo">
-          Vintage
-        </div>
-
-        <div class="nav-menu">
-          <span class="nav-item"><a href="/">Home</a></span>
-          <span class="nav-item"><a href="#">Products</a></span>
-          <span class="nav-item"><a href="#">Collections</a></span>
-          <span class="nav-item"><a href="#">About</a></span>
-        </div>
-      </div>
-    </nav>
-    <!-- End navbar -->
-
-    <!-- Start banner -->
-    <div class="banner">
-      <img src="https://cdn.shopify.com/s/files/1/0153/0847/files/hero-posters_2048x.jpg?v=1509032420" alt="">
+  <section class="container">
+    <div class="banner pt-10 pb-10">
+      <img src="https://didong.muatheme.com/wp-content/uploads/2019/01/09_01_2019_10_04_49_big-gif-2.gif" />
     </div>
-    <!-- End banner -->
+  </section>
 
-    <!-- Start collections -->
-    <section class="collection">
-      <div class="section-wrapper">
-        <div class="header">
-          <h1>Collections</h1>
-        </div>
-
-        <div class="collection-list">
-          <div class="collection-item">
-            <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/baubles_370x.png?v=1509038382">
-
-            <div class="collection-footer">
-              <span class="name">Prints</span>
-            </div>
-          </div>
-          <div class="collection-item">
-            <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/tea_583c3327-59d9-4611-8bb5-91ae7a599448_300x300.png?v=1509038648">
-
-            <div class="collection-footer">
-              <span class="name">Cars</span>
-            </div>
-          </div>
-          <div class="collection-item">
-            <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/NOTEBOOKS_SET1_370x.png?v=1509042313">
-
-            <div class="collection-footer">
-              <span class="name">Notebooks</span>
-            </div>
-          </div>
-          <div class="collection-item">
-            <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/twin_forks_370x.jpg?v=1509038405">
-
-            <div class="collection-footer">
-              <span class="name">Title</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End collection -->
-
-    <!-- Start collections -->
-    <section class="collection">
-      <div class="section-wrapper">
-        <div class="header">
-          <h1>Products</h1>
-        </div>
-
-        <div class="collection-list">
-          <div class="collection-item">
-            <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/butterfly_33e32246-b2ee-4871-9622-0cd2b47515a1_370x.png?v=1509038549">
-
-            <div class="collection-footer">
-              <span class="name">Butterfly</span>
-              <span class="price">$ 4.00</span>
-            </div>
-          </div>
-          <div class="collection-item">
-            <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/robin_414835bb-b54c-426e-a173-b638c6892a47_370x.png?v=1509038581">
-
-            <div class="collection-footer">
-              <span class="name">Bird</span>
-              <span class="price">$ 4.00</span>
-            </div>
-          </div>
-          <div class="collection-item">
-            <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/moon_1028627f-a6d7-445e-95bb-b7f49c62fc30_370x.png?v=1509038539">
-
-            <div class="collection-footer">
-              <span class="name">Moon</span>
-              <span class="price">$ 4.00</span>
-            </div>
-          </div>
-          <div class="collection-item">
-            <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/whale_997b507a-f6cb-46cd-9643-7dfba9bd5f0d_370x.png?v=1509038533">
-
-            <div class="collection-footer">
-              <span class="name">Whale</span>
-              <span class="price">$ 4.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End collection -->
-
-    <!-- Start card -->
-    <section class="card">
-      <div class="card-wrapper">
-        <div class="left">
-          <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/animal-notebook-set-2_d14e27ab-9aa2-4102-a261-b347ab3449ed_1024x1024@2x.png?v=1509038540" alt="">
-        </div>
-
-        <div class="right">
-          <div class="card-title">
-            Animal cards collection
+  <section class="container is-flex">
+    <div class="col-70 mr-5 is-flex">
+      <div class="carousel is-fullwidth">
+        <div class="carousel-image">
+          <div class="carousel-image--item">
+            <img
+              src="https://didong.muatheme.com/wp-content/uploads/2018/12/samsung-galaxy-s9-plus-m_u-_-830x390-didongviet_5.jpg" />
           </div>
 
-          <div class="price">
-            $ 47.0
+          <div class="carousel-image--item">
+            <img
+              src="https://didong.muatheme.com/wp-content/uploads/2018/12/op-lung-dong-gia-80-830x390-didongviet.jpg" />
           </div>
 
-          <span class="atcard-btn">
-            Add to card
-          </span>
-
-          <a href="/#">Full detail -></a>
+          <div class="carousel-image--item">
+            <img
+              src="https://didong.muatheme.com/wp-content/uploads/2018/12/iphone-xs-max-2-sim-vat-ly-830x390-didongviet.jpg" />
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- End card -->
-  </div>
-
-  <footer class="footer">
-    <div class="footer-wrapper">
-      <div class="footer-column">
-        <div class="footer-column--title">
-          News
-        </div>
-
-        <div class="footer-column--content">
-          Our Greetings Card Supply Box means you’ll never be caught short without a card again! Pick your own 10 cards, or let us pick for you and receive a box...
-        </div>
-      </div>
-
-      <div class="footer-column">
-        <div class="footer-column--title">
-          Follow us
-        </div>
-
-        <div class="footer-column--content">
-          <i class="fa fa-facebook-official" aria-hidden="true"></i>
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </div>
-      </div>
-
-      <div class="footer-column">
-        <div class="footer-column--title">
-          Accept via payment gate
-        </div>
-
-        <div class="footer-column--content">
-          <i class="fa fa-paypal" aria-hidden="true"></i>
-          <i class="fa fa-cc-visa" aria-hidden="true"></i>
-          <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-          <i class="fa fa-cc-stripe" aria-hidden="true"></i>
-        </div>
-      </div>
-
-      <div class="footer-column">
-        <div class="footer-column--title">
-          Newletter
-        </div>
-
-
-        <div class="footer-column--content">
-          <input class="same-default-btn" placeholder="Enter your email" />
-
-          <span class="default-btn">
-            Subscribe
-          </span>
+        <div class="carousel-image-nav">
+          <div class="carousel-image-nav--item">
+            <p>Ốp lưng đồng giá 80K mua 1 tặng 1</p>
+          </div>
+          <div class="carousel-image-nav--item">
+            <p>Pin dự phòng giảm 35% chỉ từ 289k</p>
+          </div>
+          <div class="carousel-image-nav--item">
+            <p>Ốp lưng đồng giá 80K mua 1 tặng 1</p>
+          </div>
+          <div class="carousel-image-nav--item">
+            <p>Pin dự phòng giảm 35% chỉ từ 289k</p>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="col-30 ml-5">
+      <div class="col-box pd-15 blog-related">
+        <div class="is-flex is-flex--space-between">
+          <h4 class="text-red no-margin text-uppercase">Tin nổi bật</h4>
+          <a href="">Xem tất cả</a>
+        </div>
+
+        <div class="mt-10">
+          <div class="is-flex">
+            <div class="col-30">
+              <a>
+                <img class="is-fullwidth"
+                  src="https://didong.muatheme.com/wp-content/uploads/2019/01/xiaomi-mi-9-1-didongviet-min-300x156.jpg" />
+              </a>
+            </div>
+            <div class="col-70">
+              <a>
+                <h5 class="no-margin pl-20 is-cursor">Xiaomi sẽ trang bị sạc siêu nhanh cho chiếc flagship Xiaomi Mi 9
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="is-flex mt-10">
+            <div class="col-30">
+              <a>
+                <img class="is-fullwidth"
+                  src="https://didong.muatheme.com/wp-content/uploads/2019/01/galaxy-s9-s9-plus-cover-didongviet-min-300x156.jpg" />
+              </a>
+            </div>
+            <div class="col-70">
+              <a>
+                <h5 class="no-margin pl-20 is-cursor">Loạt flagship của Samsung nhận cập nhật Android 9 với nhiều tính
+                  năng mới</h5>
+              </a>
+            </div>
+          </div>
+          <div class="is-flex mt-10">
+            <div class="col-30">
+              <a>
+                <img class="is-fullwidth"
+                  src="https://didong.muatheme.com/wp-content/uploads/2019/01/redmi-note-7-se-cap-nhat-che-do-chup-dem-super-night-view-mode-300x156.jpg" />
+              </a>
+            </div>
+            <div class="col-70">
+              <a>
+                <h5 class="no-margin pl-20 is-cursor">Redmi Note 7 sẽ cập nhật chế độ chụp đêm Super Night View mode
+                </h5>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-10">
+        <img class="is-fullwidth"
+          src="https://didong.muatheme.com/wp-content/uploads/2018/12/didongviet-bao-hanh-mo-rong-12-thang-12.jpg" />
+      </div>
+      <div class="mt-10">
+        <img class="is-fullwidth"
+          src="https://didong.muatheme.com/wp-content/uploads/2018/12/didongviet-bao-hanh-mo-rong-12.jpg" />
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+
   </footer>
 
+
 </body>
+<script>
+  $(".carousel-image").slick({
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.carousel-image-nav',
+    responsive: [
+      {
+        breakpoint: 840,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $('.carousel-image-nav').slick({
+    slidesToShow: 5,
+    variableWidth: true,
+    slidesToScroll: 1,
+    asNavFor: '.carousel-image',
+    focusOnSelect: true,
+    arrows: false,
+  });
+
+</script>
+
 </html>
